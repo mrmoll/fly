@@ -12,7 +12,11 @@ return [
     'bootstrap' => ['log'],
     //'catchAll'=>['site/offline'],//网站维护升级就把注释打开
     'controllerNamespace' => 'frontend\controllers',
+    'homeUrl'=>'/',
     'components' => [
+        'request'=>[
+            'baseUrl'=>'',
+        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,

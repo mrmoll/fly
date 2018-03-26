@@ -20,7 +20,11 @@ return [
         "@mdm/admin" => "@vendor/mdmsoft/yii2-admin",
     ],
     'language' => 'zh-CN',
+    'homeUrl'=>'/admin',
     'components' => [
+        'request'=>[
+            'baseUrl'=>'/admin',
+        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
